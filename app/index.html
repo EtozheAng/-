@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-top">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Правила</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Призы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Продукты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Победители</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Вопрос-ответ</a>
+            </li>
+            <li class="menu__item lost">
+              <a class="menu__link menu__link-down" href="#">Личный кабинет</a>
+              <ul class="menu__sub">
+                <li class="menu__sub-item">
+                  <a class="menu__sub-link" href="#">Войти</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__sub-link" href="#">Зарегистрироваться</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-content">
+        <h1 class="header-content__title">Выиграй Автомобиль</h1>
+        <h3 class="header-content__subtitle">и другие крутые призы!</h3>
+        <a class="header-content__btn" href="#">Загрузить чек</a>
+      </div>
+    </div>
+  </header>
+  <section class="all">
+    <section class="rules">
+      <div class="container">
+        <h2 class="title rules__title">Правила игры</h2>
+        <div class="rules__items">
+          <div class="rules__item">
+            <img class="rules__img" src="images/icon/milk.svg" alt="rules icon">
+            <p class="rules__action rules__action-size">Купи 3 продукта “Простоквашино”</p>
+            <p class="rules__text">в одном чеке с 8:00 16.11.20 г.</p>
+          </div>
+          <div class="rules__item">
+            <img class="rules__img" src="images/icon/rules-cheack.svg" alt="rules icon">
+            <p class="rules__action">Зарегистрируй чек</p>
+            <p class="rules__text">на сайте:
+              <a class="rules__link" href="#">prostokvashino.by</a>
+              до 12:00 10.01.21 г.
+            </p>
+          </div>
+          <div class="rules__item">
+            <img class="rules__img" src="images/icon/gif.svg" alt="rules icon">
+            <p class="rules__action">выигрывай<br>призы!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="prize">
+      <div class="container">
+        <h2 class="title prize__title">призы</h2>
+        <div class="prize__items">
+          <div class="prize__item">
+            <div class="prize__desc">Главный приз</div>
+            <img class="prize__image" src="images/prize/1.png" alt="prize photo">
+            <p class="prize__text">Автомобиль легковой
+              Renault Kaptur</p>
+          </div>
+          <div class="prize__item">
+            <div class="prize__desc">промежуточный
+              главный приз</div>
+            <img class="prize__image" src="images/prize/2.png" alt="prize photo">
+            <span class="prize__num">
+              <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="35.5" cy="35.5" r="35.5" fill="#2B3B81" />
+                <path
+                  d="M43.0267 47.2702C43.0267 49.1483 44.2286 50.2 45.8437 50.2C47.4589 50.2 48.6608 49.1483 48.6608 47.2702V25.898C48.6608 24.3956 47.7593 23.2312 46.1442 23.2312H40.8106C39.1954 23.2312 38.2564 24.5083 38.2564 25.8229C38.2564 27.1 39.0076 28.4146 40.8106 28.4146H43.0267V47.2702Z"
+                  fill="white" />
+                <path
+                  d="M21.4813 40.8085C21.3174 41.0338 21.133 41.4231 21.133 41.8533C21.133 42.7138 21.7886 43.2875 22.6901 43.2875C23.2432 43.2875 23.653 43.0416 23.9603 42.6114L27.3203 37.9402L30.6803 42.6114C30.9876 43.0416 31.3974 43.2875 31.9505 43.2875C32.852 43.2875 33.5076 42.7138 33.5076 41.8533C33.5076 41.4231 33.3232 41.0338 33.1593 40.8085L29.1027 35.3587L32.4218 30.8514C32.6266 30.585 32.7496 30.2777 32.7496 29.9499C32.7496 29.0485 32.0735 28.4543 31.1925 28.4543C30.6803 28.4543 30.1476 28.8026 29.8608 29.2124L27.3203 32.8182L24.7798 29.2124C24.493 28.8026 23.9603 28.4543 23.4481 28.4543C22.5671 28.4543 21.891 29.0485 21.891 29.9499C21.891 30.2777 22.014 30.585 22.2188 30.8514L25.5379 35.3587L21.4813 40.8085Z"
+                  fill="white" />
+              </svg>
+            </span>
+            <p class="prize__text prize__text--position">Телевизор и домашний кинотеатр Sony KDL-40RE353BR</p>
+          </div>
+        </div>
+        <div class="prize__items-next">
+          <div class="prize__item-list">
+            <div class="prize__desc">еженедельные призы</div>
+            <div class="prize__inner">
+              <div class="prize__box">
+                <img class="prize__image" src="images/prize/3.png" alt="prize photo">
+                <span class="prize__num-list"><svg width="85" height="85" viewBox="0 0 85 85" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="42.5" cy="42.5" r="42.5" fill="#2B3B81" />
+                    <path
+                      d="M50.9952 41.656C53.4152 41.656 54.9992 43.284 54.9992 46.056C54.9992 48.3 53.5032 50.456 50.9952 50.456C48.3112 50.456 46.9912 48.3 46.9912 46.056C46.9912 43.592 48.4432 41.656 50.9952 41.656ZM50.9952 56.528C56.8912 56.528 61.8632 52.612 61.8632 46.496C61.8632 43.108 60.1472 40.38 57.1552 38.884C59.3112 37.52 60.5432 35.056 60.5432 32.592C60.5432 27.4 56.0992 24.144 50.9952 24.144C45.7592 24.144 41.4912 27.444 41.4912 32.592C41.4912 35.364 42.7672 37.388 44.8352 38.884C42.0632 40.38 40.1272 42.976 40.1272 46.496C40.1272 52.392 44.9232 56.528 50.9952 56.528ZM50.9952 29.952C53.0632 29.952 54.2072 31.404 54.2072 33.296C54.2072 35.276 53.0192 36.64 50.9952 36.64C48.9712 36.64 47.8272 35.276 47.8272 33.296C47.8272 31.404 48.9272 29.952 50.9952 29.952Z"
+                      fill="white" />
+                    <path
+                      d="M16.6563 48.24C16.4643 48.504 16.2483 48.96 16.2483 49.464C16.2483 50.472 17.0163 51.144 18.0723 51.144C18.7203 51.144 19.2003 50.856 19.5603 50.352L23.4963 44.88L27.4323 50.352C27.7923 50.856 28.2723 51.144 28.9203 51.144C29.9763 51.144 30.7443 50.472 30.7443 49.464C30.7443 48.96 30.5283 48.504 30.3363 48.24L25.5843 41.856L29.4723 36.576C29.7123 36.264 29.8563 35.904 29.8563 35.52C29.8563 34.464 29.0643 33.768 28.0323 33.768C27.4323 33.768 26.8083 34.176 26.4723 34.656L23.4963 38.88L20.5203 34.656C20.1843 34.176 19.5603 33.768 18.9603 33.768C17.9283 33.768 17.1363 34.464 17.1363 35.52C17.1363 35.904 17.2803 36.264 17.5203 36.576L21.4083 41.856L16.6563 48.24Z"
+                      fill="white" />
+                  </svg></span>
+                <p class="prize__name">Мобильный телефон
+                  Apple iPhone XR 64GB
+                  Black</p>
+              </div>
+              <div class="prize__box">
+                <img class="prize__image" src="images/prize/4.png" alt="prize photo">
+                <span class="prize__num-list"><svg width="85" height="85" viewBox="0 0 85 85" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="42.5" cy="42.5" r="42.5" fill="#2B3B81" />
+                    <path
+                      d="M38.9064 50.192C42.6464 45.484 49.4664 39.412 49.4664 33.296C49.4664 27.708 45.1104 24.144 39.6984 24.144C34.2864 24.144 29.3584 28.588 29.3584 34.132C29.3584 35.848 30.4584 37.344 32.5704 37.344C36.7944 37.344 34.3744 30.216 39.4344 30.216C41.2384 30.216 42.6024 31.8 42.6024 33.604C42.6024 35.188 41.8544 36.552 41.0624 37.696C37.7184 42.536 33.7584 46.496 30.1064 50.852C29.6664 51.38 29.0944 52.172 29.0944 53.096C29.0944 55.12 30.5904 56 32.5264 56H47.2224C48.8944 56 50.3904 55.12 50.3904 53.096C50.3904 51.072 48.8944 50.192 46.9584 50.192H38.9064ZM65.008 49.092V52.832C65.008 55.164 65.932 56.264 68.176 56.264C70.42 56.264 71.344 55.164 71.344 52.832V49.092H72.092C73.808 49.092 75.172 47.948 75.172 46.188C75.172 44.428 73.808 43.284 72.092 43.284H71.344V29.776C71.344 25.772 68.836 24.144 66.284 24.144C63.996 24.144 62.764 24.936 61.796 26.696L51.94 44.56C51.676 45 51.324 45.528 51.324 46.496C51.324 47.64 52.248 49.092 54.404 49.092H65.008ZM65.008 43.284H58.98L64.92 31.008H65.008V43.284Z"
+                      fill="white" />
+                    <path
+                      d="M8.65634 48.24C8.46434 48.504 8.24834 48.96 8.24834 49.464C8.24834 50.472 9.01634 51.144 10.0723 51.144C10.7203 51.144 11.2003 50.856 11.5603 50.352L15.4963 44.88L19.4323 50.352C19.7923 50.856 20.2723 51.144 20.9203 51.144C21.9763 51.144 22.7443 50.472 22.7443 49.464C22.7443 48.96 22.5283 48.504 22.3363 48.24L17.5843 41.856L21.4723 36.576C21.7123 36.264 21.8563 35.904 21.8563 35.52C21.8563 34.464 21.0643 33.768 20.0323 33.768C19.4323 33.768 18.8083 34.176 18.4723 34.656L15.4963 38.88L12.5203 34.656C12.1843 34.176 11.5603 33.768 10.9603 33.768C9.92834 33.768 9.13634 34.464 9.13634 35.52C9.13634 35.904 9.28034 36.264 9.52034 36.576L13.4083 41.856L8.65634 48.24Z"
+                      fill="white" />
+                  </svg></span>
+                <p class="prize__name">Пылесос-робот
+                  iLife V8S</p>
+              </div>
+              <div class="prize__box">
+                <img class="prize__image" src="images/prize/5.png" alt="prize photo">
+                <span class="prize__num-list"><svg width="93" height="83" viewBox="0 0 93 83" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="41.5" cy="41.5" r="41.5" fill="#2B3B81" />
+                    <path
+                      d="M40.2424 42.656C42.6624 42.656 44.2464 44.284 44.2464 47.056C44.2464 49.3 42.7504 51.456 40.2424 51.456C37.5584 51.456 36.2384 49.3 36.2384 47.056C36.2384 44.592 37.6904 42.656 40.2424 42.656ZM40.2424 57.528C46.1384 57.528 51.1104 53.612 51.1104 47.496C51.1104 44.108 49.3944 41.38 46.4024 39.884C48.5584 38.52 49.7904 36.056 49.7904 33.592C49.7904 28.4 45.3464 25.144 40.2424 25.144C35.0064 25.144 30.7384 28.444 30.7384 33.592C30.7384 36.364 32.0144 38.388 34.0824 39.884C31.3104 41.38 29.3744 43.976 29.3744 47.496C29.3744 53.392 34.1704 57.528 40.2424 57.528ZM40.2424 30.952C42.3104 30.952 43.4544 32.404 43.4544 34.296C43.4544 36.276 42.2664 37.64 40.2424 37.64C38.2184 37.64 37.0744 36.276 37.0744 34.296C37.0744 32.404 38.1744 30.952 40.2424 30.952ZM63.748 51.544C59.26 51.544 58.952 44.46 58.952 41.336C58.952 37.992 59.26 31.128 63.748 31.128C68.236 31.128 68.544 37.992 68.544 41.336C68.544 44.46 68.236 51.544 63.748 51.544ZM63.748 57.528C72.636 57.528 75.408 48.508 75.408 41.336C75.408 34.164 72.636 25.144 63.748 25.144C54.86 25.144 52.088 34.164 52.088 41.336C52.088 48.508 54.86 57.528 63.748 57.528Z"
+                      fill="white" />
+                    <path
+                      d="M9.58604 49.01C9.37804 49.296 9.14404 49.79 9.14404 50.336C9.14404 51.428 9.97604 52.156 11.12 52.156C11.822 52.156 12.342 51.844 12.732 51.298L16.996 45.37L21.26 51.298C21.65 51.844 22.17 52.156 22.872 52.156C24.016 52.156 24.848 51.428 24.848 50.336C24.848 49.79 24.614 49.296 24.406 49.01L19.258 42.094L23.47 36.374C23.73 36.036 23.886 35.646 23.886 35.23C23.886 34.086 23.028 33.332 21.91 33.332C21.26 33.332 20.584 33.774 20.22 34.294L16.996 38.87L13.772 34.294C13.408 33.774 12.732 33.332 12.082 33.332C10.964 33.332 10.106 34.086 10.106 35.23C10.106 35.646 10.262 36.036 10.522 36.374L14.734 42.094L9.58604 49.01Z"
+                      fill="white" />
+                  </svg></span>
+                <p class="prize__name">Электронный подарочный
+                  сертификат 21 vek+
+                  на 100 рублей</p>
+              </div>
+            </div>
+          </div>
+          <div class="prize__item-list">
+            <div class="prize__desc">ежедневный приз</div>
+            <div class="prize__box prize__box--center">
+              <img class="prize__image" src="images/prize/6.png" alt="prize photo">
+              <span class="prize__num-list"><svg width="83" height="83" viewBox="0 0 83 83" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="41.5" cy="41.5" r="41.5" fill="#2B3B81" />
+                  <path
+                    d="M38.5248 46.8856C40.7348 44.1036 44.7648 40.5156 44.7648 36.9016C44.7648 33.5996 42.1908 31.4936 38.9928 31.4936C35.7948 31.4936 32.8828 34.1196 32.8828 37.3956C32.8828 38.4096 33.5328 39.2936 34.7808 39.2936C37.2768 39.2936 35.8468 35.0816 38.8368 35.0816C39.9028 35.0816 40.7088 36.0176 40.7088 37.0836C40.7088 38.0196 40.2668 38.8256 39.7988 39.5016C37.8228 42.3616 35.4828 44.7016 33.3248 47.2756C33.0648 47.5876 32.7268 48.0556 32.7268 48.6016C32.7268 49.7976 33.6108 50.3176 34.7548 50.3176H43.4388C44.4268 50.3176 45.3108 49.7976 45.3108 48.6016C45.3108 47.4056 44.4268 46.8856 43.2828 46.8856H38.5248ZM52.9085 41.8416C54.3385 41.8416 55.2745 42.8036 55.2745 44.4416C55.2745 45.7676 54.3905 47.0416 52.9085 47.0416C51.3225 47.0416 50.5425 45.7676 50.5425 44.4416C50.5425 42.9856 51.4005 41.8416 52.9085 41.8416ZM52.9085 50.6296C56.3925 50.6296 59.3305 48.3156 59.3305 44.7016C59.3305 42.6996 58.3165 41.0876 56.5485 40.2036C57.8225 39.3976 58.5505 37.9416 58.5505 36.4856C58.5505 33.4176 55.9245 31.4936 52.9085 31.4936C49.8145 31.4936 47.2925 33.4436 47.2925 36.4856C47.2925 38.1236 48.0465 39.3196 49.2685 40.2036C47.6305 41.0876 46.4865 42.6216 46.4865 44.7016C46.4865 48.1856 49.3205 50.6296 52.9085 50.6296ZM52.9085 34.9256C54.1305 34.9256 54.8065 35.7836 54.8065 36.9016C54.8065 38.0716 54.1045 38.8776 52.9085 38.8776C51.7125 38.8776 51.0365 38.0716 51.0365 36.9016C51.0365 35.7836 51.6865 34.9256 52.9085 34.9256ZM66.7982 47.0936C64.1462 47.0936 63.9642 42.9076 63.9642 41.0616C63.9642 39.0856 64.1462 35.0296 66.7982 35.0296C69.4502 35.0296 69.6322 39.0856 69.6322 41.0616C69.6322 42.9076 69.4502 47.0936 66.7982 47.0936ZM66.7982 50.6296C72.0502 50.6296 73.6882 45.2996 73.6882 41.0616C73.6882 36.8236 72.0502 31.4936 66.7982 31.4936C61.5462 31.4936 59.9082 36.8236 59.9082 41.0616C59.9082 45.2996 61.5462 50.6296 66.7982 50.6296Z"
+                    fill="white" />
+                  <path
+                    d="M9.18589 47.3276C8.97789 47.6136 8.74389 48.1076 8.74389 48.6536C8.74389 49.7456 9.57589 50.4736 10.7199 50.4736C11.4219 50.4736 11.9419 50.1616 12.3319 49.6156L16.5959 43.6876L20.8599 49.6156C21.2499 50.1616 21.7699 50.4736 22.4719 50.4736C23.6159 50.4736 24.4479 49.7456 24.4479 48.6536C24.4479 48.1076 24.2139 47.6136 24.0059 47.3276L18.8579 40.4116L23.0699 34.6916C23.3299 34.3536 23.4859 33.9636 23.4859 33.5476C23.4859 32.4036 22.6279 31.6496 21.5099 31.6496C20.8599 31.6496 20.1839 32.0916 19.8199 32.6116L16.5959 37.1876L13.3719 32.6116C13.0079 32.0916 12.3319 31.6496 11.6819 31.6496C10.5639 31.6496 9.70589 32.4036 9.70589 33.5476C9.70589 33.9636 9.86189 34.3536 10.1219 34.6916L14.3339 40.4116L9.18589 47.3276Z"
+                    fill="white" />
+                </svg></span>
+              <p class="prize__name">Подписка «ТВ и Кино:
+                «Оптимальная»
+                сроком 2 (два) месяца»</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="container">
+        <h2 class="title slider__title">продукты</h2>
+        <div class="slider__items">
+          <div class="slider__item">
+            <div class="slider__product">
+              <img class="slider__img" src="images/slider/1.png" alt="">
+              <p class="slider__subtitle">СЫРОК ГЛАЗИРОВАННЫЙ С АРОМАТОМ ВАНИЛИ</p>
+              <ul class="slider__info">
+                <li class="slider__list">массовая доля жира 23%</li>
+                <li class="slider__list">Масса нетто: 180 г</li>
+                <li class="slider__list">Упаковка: фольга</li>
+                <li class="slider__list">Срок годности: 45 суток</li>
+              </ul>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__product">
+              <img class="slider__img" src="images/slider/2.png" alt="">
+              <p class="slider__subtitle">МАСЛО СЛИВОЧНОЕ 82,5%</p>
+              <ul class="slider__info">
+                <li class="slider__list">массовая доля жира 23%</li>
+                <li class="slider__list">Масса нетто: 180 г</li>
+                <li class="slider__list">Упаковка: фольга</li>
+                <li class="slider__list">Срок годности: 45 суток</li>
+              </ul>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__product">
+              <img class="slider__img" src="images/slider/3.png" alt="">
+              <p class="slider__subtitle">МАСЛО СЛИВОЧНОЕ 82,5%</p>
+              <ul class="slider__info">
+                <li class="slider__list">массовая доля жира 23%</li>
+                <li class="slider__list">Масса нетто: 180 г</li>
+                <li class="slider__list">Упаковка: фольга</li>
+                <li class="slider__list">Срок годности: 45 суток</li>
+              </ul>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__product">
+              <img class="slider__img" src="images/slider/3.png" alt="">
+              <p class="slider__subtitle">МАСЛО СЛИВОЧНОЕ 82,5%</p>
+              <ul class="slider__info">
+                <li class="slider__list">массовая доля жира 23%</li>
+                <li class="slider__list">Масса нетто: 180 г</li>
+                <li class="slider__list">Упаковка: фольга</li>
+                <li class="slider__list">Срок годности: 45 суток</li>
+              </ul>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__product">
+              <img class="slider__img" src="images/slider/4.png" alt="">
+              <p class="slider__subtitle">МОЛОКО «ПРОСТОКВАШИНО»
+                В БУТЫЛКЕ 2,5%</p>
+              <ul class="slider__info">
+                <li class="slider__list">массовая доля жира 23%</li>
+                <li class="slider__list">Масса нетто: 180 г</li>
+                <li class="slider__list">Упаковка: фольга</li>
+                <li class="slider__list">Срок годности: 45 суток</li>
+              </ul>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__product">
+              <img class="slider__img" src="images/slider/4.png" alt="">
+              <p class="slider__subtitle">МОЛОКО «ПРОСТОКВАШИНО»
+                В БУТЫЛКЕ 2,5%</p>
+              <ul class="slider__info">
+                <li class="slider__list">массовая доля жира 23%</li>
+                <li class="slider__list">Масса нетто: 180 г</li>
+                <li class="slider__list">Упаковка: фольга</li>
+                <li class="slider__list">Срок годности: 45 суток</li>
+              </ul>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__product">
+              <img class="slider__img" src="images/slider/4.png" alt="">
+              <p class="slider__subtitle">МОЛОКО «ПРОСТОКВАШИНО»
+                В БУТЫЛКЕ 2,5%</p>
+              <ul class="slider__info">
+                <li class="slider__list">массовая доля жира 23%</li>
+                <li class="slider__list">Масса нетто: 180 г</li>
+                <li class="slider__list">Упаковка: фольга</li>
+                <li class="slider__list">Срок годности: 45 суток</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="winners">
+      <div class="container">
+        <h2 class="title winners__title">Победители</h2>
+        <div class="winners__table">
+          <table class="table">
+            <tr class="table__subtitle">
+              <th class="table__init">ФИО</th>
+              <th class="table__num">Номер участника</th>
+              <th class="table__data">дата розыгрыша</th>
+              <th class="table__prize">Приз</th>
+            </tr>
+            <tr class="table__info">
+              <td>Фамилия Имя</td>
+              <td>9003290</td>
+              <td>15.09.2019 20:10</td>
+              <td>Подписка на “ТВ и Кино”</td>
+            </tr>
+            <tr class="table__info">
+              <td>Фамилия Имя</td>
+              <td>5305954</td>
+              <td>15.09.2019 20:10</td>
+              <td>Подписка на “ТВ и Кино”</td>
+            </tr>
+            <tr class="table__info">
+              <td>Фамилия Имя</td>
+              <td>5677878</td>
+              <td>15.09.2019 20:10</td>
+              <td>Подписка на “ТВ и Кино”</td>
+            </tr>
+            <tr class="table__info">
+              <td>Фамилия Имя</td>
+              <td>1233443</td>
+              <td>15.09.2019 20:10</td>
+              <td>Подписка на “ТВ и Кино”</td>
+            </tr>
+            <tr class="table__info">
+              <td>Фамилия Имя</td>
+              <td>7686781</td>
+              <td>15.09.2019 20:10</td>
+              <td>Подписка на “ТВ и Кино”</td>
+            </tr>
+          </table>
+          <div class="pagination">
+            <a class="pagination__arrows" href="#">
+              <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.63534 16L2.58108 9M2.58108 9L9.63534 2M2.58108 9L19.209 9" stroke="#2B3B81" stroke-width="4"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">4</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">5</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">...</a>
+              </li>
+            </ul>
+            <a class="pagination__arrows" href="#">
+              <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.9994 2L19.0537 9M19.0537 9L11.9994 16M19.0537 9L2.42578 9" stroke="#2B3B81" stroke-width="4"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

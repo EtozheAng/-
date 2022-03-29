@@ -1,0 +1,19 @@
+body {
+  font-size: 21px;
+  line-height: 110%;
+  color: #fff;
+  @extend %rotondac-700;
+  background-color: $accent;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.title{
+  font-size: 70px;
+  line-height: 85px;
+  text-align: center;
+  text-transform: uppercase;
+  @extend %montserrat;
+}
