@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  <header class="header">
+  <section class="all">
+    <header class="header">
     <div class="container">
       <div class="header-top">
         <nav class="menu">
@@ -40,16 +41,14 @@
             <li class="menu__item">
               <a class="menu__link" href="#">Вопрос-ответ</a>
             </li>
-            <li class="menu__item lost">
-              <a class="menu__link menu__link-down" href="#">Личный кабинет</a>
-              <ul class="menu__sub">
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">Войти</a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">Зарегистрироваться</a>
-                </li>
-              </ul>
+            <li class="menu__drop">
+              <button class="menu__dropbtn">Личный кабинет <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L7 7L2 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg></button>
+              <div class="menu__drop-content">
+                <a class="menu__sub-link" href="#">Войти</a>
+                <a class="menu__sub-link" href="#">Зарегистрироваться</a>
+              </div>
             </li>
           </ul>
         </nav>
@@ -60,8 +59,7 @@
         <a class="header-content__btn" href="#">Загрузить чек</a>
       </div>
     </div>
-  </header>
-  <section class="all">
+    </header>
     <section class="rules">
       <div class="container">
         <h2 class="title rules__title">Правила игры</h2>
@@ -340,7 +338,7 @@
                 <a class="pagination__link" href="#">2</a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link" href="#">3</a>
+                <a class="pagination__link pagination__link--active" href="#">3</a>
               </li>
               <li class="pagination__item">
                 <a class="pagination__link" href="#">4</a>
@@ -362,6 +360,144 @@
         </div>
       </div>
     </section>
+    <section class="accordion">
+      <div class="container">
+        <h2 class="title">Вопрос-ответ</h2>
+        <div class="accordion-item">
+          <div class="accordion-item__title">
+            <p class="accordion-item__subtitle">
+              Часто задаваемые вопросы?
+            </p>
+            <button class="accordion-item__btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class='off' d="M12 2.3999V21.5999" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M2.40039 12H21.6004" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="accordion-item__content">
+            <p>
+              Мы создали электронное расписание с фирменным дизайном, чтобы каждая учебная неделя для вашего ребенка начиналась с
+              любимыми героями Простоквашино
+            </p><br>
+            <p>
+              Просто скачайте PDF-файл, распечатайте –
+              и пользуйтесь каждую неделю!
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item__title">
+            <p class="accordion-item__subtitle">
+              Часто задаваемые вопросы?
+            </p>
+            <button class="accordion-item__btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class='off' d="M12 2.3999V21.5999" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M2.40039 12H21.6004" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="accordion-item__content">
+            <p>
+              Мы создали электронное расписание с фирменным дизайном, чтобы каждая учебная неделя для вашего ребенка начиналась с
+              любимыми героями Простоквашино
+            </p><br>
+            <p>
+              Просто скачайте PDF-файл, распечатайте –
+              и пользуйтесь каждую неделю!
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item__title">
+            <p class="accordion-item__subtitle">
+              Часто задаваемые вопросы?
+            </p>
+            <button class="accordion-item__btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class='off' d="M12 2.3999V21.5999" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M2.40039 12H21.6004" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="accordion-item__content">
+            <p>
+              Мы создали электронное расписание с фирменным дизайном, чтобы каждая учебная неделя для вашего ребенка начиналась с
+              любимыми героями Простоквашино
+            </p><br>
+            <p>
+              Просто скачайте PDF-файл, распечатайте –
+              и пользуйтесь каждую неделю!
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item__title">
+            <p class="accordion-item__subtitle">
+              Часто задаваемые вопросы?
+            </p>
+            <button class="accordion-item__btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class='off' d="M12 2.3999V21.5999" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M2.40039 12H21.6004" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="accordion-item__content">
+            <p>
+              Мы создали электронное расписание с фирменным дизайном, чтобы каждая учебная неделя для вашего ребенка начиналась с
+              любимыми героями Простоквашино
+            </p><br>
+            <p>
+              Просто скачайте PDF-файл, распечатайте –
+              и пользуйтесь каждую неделю!
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item__title">
+            <p class="accordion-item__subtitle">
+              Часто задаваемые вопросы?
+            </p>
+            <button class="accordion-item__btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class='off' d="M12 2.3999V21.5999" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M2.40039 12H21.6004" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="accordion-item__content">
+            <p>
+              Мы создали электронное расписание с фирменным дизайном, чтобы каждая учебная неделя для вашего ребенка начиналась с
+              любимыми героями Простоквашино
+            </p><br>
+            <p>
+              Просто скачайте PDF-файл, распечатайте –
+              и пользуйтесь каждую неделю!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top__item">
+            <p class="footer-top__text">Звонок по Беларуси</p>
+            <a class="footer-top__tel" href="tel:+375447754468">(+375 44) 775-44-68</a>
+            <p class="footer-top__text"><br>с понедельника по пятницу с 11.00 до 19.00,<br> в субботу с 10.00 до 12.00</p>
+          </div>
+          <img class="footer-top__img" src="images/logo-footer.svg" alt="logo">
+        </div>
+        <div class="footer-bottom">
+          <p>Сроки проведения с 16.11.2020 г. по 29.01.2021 г. Свидетельство о государственной регистрации рекламной игры № 3871 от
+          14.10.2020 г., выданное Министерством антимонопольного регулирования и торговли Республики Беларусь.</p>
+          <p><br>Телефон для справок: +375 (44) 775-44-68</p>
+        </div> 
+      </div>
+    </footer>
   </section>
   <script src="js/main.min.js"></script>
 </body>
