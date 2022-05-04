@@ -1,17 +1,55 @@
  $(function(){
-//    $(".menu__sub").hide(); // скрываем выпадающее меню
-//    $(".menu li:has('.menu__sub')").hover(
-//   function(){
-//        $(".menu__sub").stop().fadeToggle(300);} /* отбираем элемент списка, который содержит элемент с классом .submenu и добавляем ему функцию при наведении, которая показывает и скрывает выпадающее меню */
-// );
+   $(".menu a").on("click", function (event) {
+     event.preventDefault();
+     var id = $(this).attr('href'),
+       top = $(id).offset().top;
+     $('body,html').animate({ scrollTop: top }, 1000);
+   });
+
+
+   $('.menu__btn').on('click', function(){
+     $('.menu__list').toggleClass('menu__list--active');
+   });
+
    $('.slider__items').slick({
      prevArrow: '<button type="button" class="slick-prev"><img src="images/arrow-left.svg" alt="arrow-left"></button>',
      nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-right.svg" alt="arrow-right"></button>',
-     infinite: true,
      slidesToShow: 4,
      slidesToScroll: 2,
      dots: true,
-     variableWidth: true
+     variableWidth: true,
+     responsive: [
+       {
+         breakpoint: 1400,
+         settings: {
+           arrows: false
+         }
+       },
+       {
+         breakpoint: 1024,
+         settings: {
+           arrows: false,
+           slidesToShow: 3,
+           slidesToScroll: 3
+         }
+       },
+       {
+         breakpoint: 790,
+         settings: {
+           arrows: false,
+           slidesToShow: 2,
+           slidesToScroll: 2
+         }
+       },
+       {
+         breakpoint: 475,
+         settings: {
+           arrows: false,
+           slidesToShow: 1,
+           slidesToScroll: 1
+         }
+       }
+     ]
    });
 
    $('.accordion-item').click(function(){

@@ -4,6 +4,14 @@
 @import 'libs';
 @import 'global';
 
+
+
+body{
+  // background-image: url('../images/bg-img.png');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;;
+}
 .header{
   min-height: 900px;
   margin-bottom: 85px;
@@ -19,6 +27,12 @@
   line-height: 22px;
   &__list{
     display: flex;
+  }
+  .menu__list.menu__list--active{
+    transform: translate(0%);
+    transition: all .2s;
+    text-align: center;
+    transition: all 0.5s;
   }
   &__item{
     display: inline-block;
@@ -36,6 +50,15 @@
     &:hover{
       color: $accent;
     }
+  }
+  &__btn{
+    background-color: transparent;
+    border: none;
+    display: none;
+    position: absolute;
+    padding: 0;
+    top: -100px;
+    right: 3px;
   }
   &__drop{
     position: relative;
@@ -72,6 +95,9 @@
       color: $w;
       padding: 10px 26px;
       display: block;
+      &:hover{
+        color: $accent;
+      }
     }
   }
 }
@@ -134,16 +160,18 @@
     line-height: 31px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 5px;
   }
   &__action-size{
     font-size: 23px;
     line-height: 27px;
+    margin-bottom: 5px;
   }
   &__text{
     font-size: 19px;
     line-height: 22px;
-    text-align: center;
+  }
+  &__reg{
+    margin-bottom: 5px;
   }
   &__link{
     color: $accent;
@@ -211,10 +239,11 @@
   }
   &__num-list{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -10px;
+    right: 10px;
   }
-  &__box{
+  &__box,
+  &__box--center{
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -223,13 +252,19 @@
     flex-direction: column;
     align-items: center;
     height: 252px;
+    margin-right: 20px;
+    &:nth-last-child(2){
+      align-items: flex-start;
+    }
     &:nth-child(3){
       padding-top: 71px;
+      margin-right: 0;
       align-items: flex-start;
     }
   }
   &__box--center{
     padding-top: 49px;
+    margin-right: 0;
   }
   &__text{
     font-size: 23px;
@@ -238,12 +273,11 @@
     position: absolute;
     width: 239px;
     right: 0;
-    top: 345px;
+    bottom: 28px;
     margin: 0 59px 0 auto;
   }
   &__text--position{
     width: 352px;
-    top: 345px;
     margin: 0;
     right: auto;
   }
@@ -261,9 +295,6 @@
     display: flex;
     justify-content: space-between;
   }
-  &__item{
-    padding-right: 30px;
-  }
   &__title{
     margin-bottom: 24px;
   }
@@ -274,10 +305,11 @@
     justify-content: flex-end;
     background-color: $w;
     height: 476px;
+    max-width: 270px;
     padding: 13px 20px 23px 20px;
   }
   &__img{
-    margin: auto;
+    margin: 0 auto;
   }
   &__subtitle{
     text-align: center;
@@ -340,7 +372,7 @@
   width: 300px; 
 }
 .winners{
-  padding: 125px 108px;
+  padding: 125px 0 108px;
   &__title{
     margin-bottom: 14px;
   }
@@ -351,6 +383,7 @@
   }
 }
 .table{
+  min-width: 1100px;
   width: 100%;
   font-size: 23px;
   line-height: 105%;
@@ -435,7 +468,9 @@
 }
 
 .accordion{
-  // margin-bottom: 100px;
+  &__title{
+    margin-bottom: 24px;
+  }
 }
 .accordion-item{
   cursor: pointer;
@@ -471,7 +506,7 @@
     margin-bottom: 57px;
   }
   &__btn{
-    padding: 0;
+    padding: 5px 0 0 0;
     border: 0;
     width: 48px;
     height: 48px;

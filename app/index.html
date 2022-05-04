@@ -11,24 +11,32 @@
 
 <body>
   <section class="all">
-    <header class="header">
+    <header class="header" id="header"">
     <div class="container">
       <div class="header-top">
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#">Главная</a>
+              <a class="menu__link" href="#header">Главная</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Правила</a>
+              <a class="menu__link" href="#rules">Правила</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Призы</a>
+              <a class="menu__link" href="#prize">Призы</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Продукты</a>
+              <a class="menu__link" href="#slider">Продукты</a>
             </li>
           </ul>
+          <button class="menu__btn">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="26" cy="26" r="26" fill="#37C2E7" />
+              <rect x="13.2764" y="15.4894" width="25.3617" height="3.74468" rx="1.87234" fill="white" />
+              <rect x="13.2764" y="24.234" width="25.3617" height="3.74468" rx="1.87234" fill="white" />
+              <rect x="13.2764" y="32.9786" width="25.3617" height="3.74468" rx="1.87234" fill="white" />
+            </svg>
+          </button>
         </nav>
         <a class="logo" href="#">
           <img class="logo__img" src="images/logo.svg" alt="logo">
@@ -36,10 +44,10 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#">Победители</a>
+              <a class="menu__link" href="#winners">Победители</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Вопрос-ответ</a>
+              <a class="menu__link" href="#accordion">Вопрос-ответ</a>
             </li>
             <li class="menu__drop">
               <button class="menu__dropbtn">Личный кабинет <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,22 +68,26 @@
       </div>
     </div>
     </header>
-    <section class="rules">
+    <section class="rules" id="rules">
       <div class="container">
         <h2 class="title rules__title">Правила игры</h2>
         <div class="rules__items">
           <div class="rules__item">
             <img class="rules__img" src="images/icon/milk.svg" alt="rules icon">
-            <p class="rules__action rules__action-size">Купи 3 продукта “Простоквашино”</p>
-            <p class="rules__text">в одном чеке с 8:00 16.11.20 г.</p>
+            <div class="rules__action">
+              <p class="rules__action-size">Купи 3 продукта “Простоквашино”</p>
+              <p class="rules__text">в одном чеке с 8:00 16.11.20 г.</p>
+            </div>
           </div>
           <div class="rules__item">
             <img class="rules__img" src="images/icon/rules-cheack.svg" alt="rules icon">
-            <p class="rules__action">Зарегистрируй чек</p>
-            <p class="rules__text">на сайте:
-              <a class="rules__link" href="#">prostokvashino.by</a>
-              до 12:00 10.01.21 г.
-            </p>
+            <div class="rules__action">
+              <p class="rules__reg">Зарегистрируй чек</p>
+              <p class="rules__text">на сайте:
+                <a class="rules__link" href="#">prostokvashino.by</a>
+                до 12:00 10.01.21 г.
+              </p>
+            </div>
           </div>
           <div class="rules__item">
             <img class="rules__img" src="images/icon/gif.svg" alt="rules icon">
@@ -84,20 +96,20 @@
         </div>
       </div>
     </section>
-    <section class="prize">
+    <section class="prize" id="prize">
       <div class="container">
         <h2 class="title prize__title">призы</h2>
         <div class="prize__items">
           <div class="prize__item">
-            <div class="prize__desc">Главный приз</div>
-            <img class="prize__image" src="images/prize/1.png" alt="prize photo">
+            <div class="prize__desc prize__desc--main">Главный приз</div>
+            <img  src="images/prize/1.png" alt="prize photo">
             <p class="prize__text">Автомобиль легковой
               Renault Kaptur</p>
           </div>
           <div class="prize__item">
             <div class="prize__desc">промежуточный
               главный приз</div>
-            <img class="prize__image" src="images/prize/2.png" alt="prize photo">
+            <img  src="images/prize/2.png" alt="prize photo">
             <span class="prize__num">
               <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="35.5" cy="35.5" r="35.5" fill="#2B3B81" />
@@ -133,7 +145,7 @@
                   Black</p>
               </div>
               <div class="prize__box">
-                <img class="prize__image" src="images/prize/4.png" alt="prize photo">
+                <img  src="images/prize/4.png" alt="prize photo">
                 <span class="prize__num-list"><svg width="85" height="85" viewBox="0 0 85 85" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <circle cx="42.5" cy="42.5" r="42.5" fill="#2B3B81" />
@@ -148,7 +160,7 @@
                   iLife V8S</p>
               </div>
               <div class="prize__box">
-                <img class="prize__image" src="images/prize/5.png" alt="prize photo">
+                <img  src="images/prize/5.png" alt="prize photo">
                 <span class="prize__num-list"><svg width="93" height="83" viewBox="0 0 93 83" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <circle cx="41.5" cy="41.5" r="41.5" fill="#2B3B81" />
@@ -167,8 +179,8 @@
           </div>
           <div class="prize__item-list">
             <div class="prize__desc">ежедневный приз</div>
-            <div class="prize__box prize__box--center">
-              <img class="prize__image" src="images/prize/6.png" alt="prize photo">
+            <div class="prize__box--center">
+              <img src="images/prize/6.png" alt="prize photo">
               <span class="prize__num-list"><svg width="83" height="83" viewBox="0 0 83 83" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <circle cx="41.5" cy="41.5" r="41.5" fill="#2B3B81" />
@@ -187,7 +199,7 @@
         </div>
       </div>
     </section>
-    <section class="slider">
+    <section class="slider" id="slider">
       <div class="container">
         <h2 class="title slider__title">продукты</h2>
         <div class="slider__items">
@@ -281,7 +293,7 @@
         </div>
       </div>
     </section>
-    <section class="winners">
+    <section class="winners" id="winners">
       <div class="container">
         <h2 class="title winners__title">Победители</h2>
         <div class="winners__table">
@@ -360,9 +372,9 @@
         </div>
       </div>
     </section>
-    <section class="accordion">
+    <section class="accordion" id="accordion">
       <div class="container">
-        <h2 class="title">Вопрос-ответ</h2>
+        <h2 class="title accordion__title">Вопрос-ответ</h2>
         <div class="accordion-item">
           <div class="accordion-item__title">
             <p class="accordion-item__subtitle">
