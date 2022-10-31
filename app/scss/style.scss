@@ -4,14 +4,6 @@
 @import 'libs';
 @import 'global';
 
-
-
-body{
-  // background-image: url('../images/bg-img.png');
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;;
-}
 .header{
   min-height: 900px;
   margin-bottom: 85px;
@@ -95,8 +87,9 @@ body{
       color: $w;
       padding: 10px 26px;
       display: block;
+      transition: all .5s;
       &:hover{
-        color: $accent;
+        color: $bg;
       }
     }
   }
@@ -496,7 +489,7 @@ body{
     color: $bg; 
   }
   &__content{
-    width: 865px;
+    max-width: 865px;
     margin-top: 40px;
     display: none;
     @extend %rotondac;
