@@ -52,7 +52,7 @@
      ]
    });
 
-   $('.accordion-item').click(function(){
+   $('.accordion-item').on('click', function(){
      $(this).toggleClass('accordion-item__title--active');
      $(this).children('.accordion-item__content').slideToggle(400);
    });
